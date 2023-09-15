@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bttf-deployment
+  labels:
+    app: bttf-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bttf
+  template:
+    metadata:
+      labels:
+        app: bttf
+    spec:
+      containers:
+      - name: bttf
+        image: acrwesh01devweu.azurecr.io/bttf:v1
+        ports:
+        - containerPort: 80

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Very Rich biff!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header img {
+            max-width: 15%;
+            max-height: 20%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="image.jpg" alt="Sports Image">
+    </div>
+    <div class="container">
+        <h1>Date: October 14, 1959</h1>
+        <h1>Place a bet on your winning team</h1>
+        <form action="submit_bet.php" method="POST">
+            <div class="form-group">
+                <label for="team">Select a Team:</label>
+                <select name="team" id="team">
+                    <option value="Miami Dolphins">Miami Dolphins</option>
+                    <option value="New York Giants">New York Giants</option>
+                    <option value="Seattle Seahawks">Seattle Seahawks</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Bet Amount (USD):</label>
+                <input type="number" name="amount" id="amount" step="0.01" min="0">
+            </div>
+            <div class="form-group">
+                <button type="submit">Place Bet</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
