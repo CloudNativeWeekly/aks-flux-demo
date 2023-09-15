@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: bttf-abts
   name: bttf-svc
 spec:
   type: LoadBalancer

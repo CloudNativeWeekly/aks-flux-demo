@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: bttf-abts
   name: bttf-deployment
   labels:
     app: bttf-deployment
