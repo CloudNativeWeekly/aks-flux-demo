@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: bttf
-        image: acrwesh01devweu.azurecr.io/bttf:v1
+        image: acrwesh01devweu.azurecr.io/bttf:v2
         ports:
         - containerPort: 80
