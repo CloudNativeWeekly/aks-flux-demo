@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: bttf
-  name: bttf-deployment
+  namespace: nginx
+  name: nginx-deployment
   labels:
-    app: bttf-deployment
+    app: nginx-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: bttf
+      app: nginx
   template:
     metadata:
       labels:
-        app: bttf
+        app: nginx
     spec:
       containers:
-      - name: bttf
-        image: acrcnweekly532devweu.azurecr.io/bttf:v2
+      - name: nginx
+        image: nginx
         ports:
         - containerPort: 80
